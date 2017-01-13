@@ -9,5 +9,6 @@ Explanation and task description you may find inside Java Classes in Java Doc.
 ## List of implemented tasks
 - Rotate Array by given steps
 - Palindrome detection
+- Reverse Words
 
 
