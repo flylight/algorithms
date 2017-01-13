@@ -1,38 +1,25 @@
 package com.ar.algorithms;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+
+import java.util.Arrays;
+
+import static org.junit.Assert.assertTrue;
 
 /**
- * Unit test for simple RotateArray.
+ * Unit test for RotateArray implementation.
  */
-public class RotateArrayTest
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public RotateArrayTest(String testName )
-    {
-        super( testName );
-    }
+public class RotateArrayTest {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( RotateArrayTest.class );
-    }
+  @Test
+  public void testRotateArray() {
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+    int[] testArray = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+    RotateArray.rotate(testArray, 3);
+
+    assertTrue(Arrays.equals(new int[]{7, 8, 9, 1, 2, 3, 4, 5, 6}, testArray));
+
+  }
+
 }
